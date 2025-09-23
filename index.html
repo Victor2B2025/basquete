@@ -19,16 +19,18 @@
 
     <main>
         <!-- Seção dos Times -->
-        <section id="times">
+        <section id="times" class="animated-section">
             <h2>Times de Basquete</h2>
             <div class="times-container">
                 <!-- Time 1 (Boston Celtics) -->
                 <div class="time">
                     <img src="assets/channels4_profile.jpg" alt="Logo Boston Celtics">
                     <h3>Boston Celtics</h3>
-                    <p>Fundado em 1946. Também com 17 títulos da NBA, é um dos maiores rivais dos Lakers.</p>
-                    <button onclick="exibirDetalhes('celtics')">Ver Detalhes</button>
-                    <div id="celtics" class="detalhes"></div>
+                    <p>Fundado em 1946. Com 17 títulos da NBA, é um dos maiores rivais dos Lakers.</p>
+                    <button onclick="toggleDetails('celtics')">Ver Detalhes</button>
+                    <div id="celtics" class="detalhes">
+                        <p>O Boston Celtics é um dos times mais tradicionais da NBA, com uma rica história marcada por lendas como Bill Russell e Larry Bird. A equipe tem 17 títulos da NBA, sendo um dos maiores rivais dos Lakers.</p>
+                    </div>
                 </div>
 
                 <!-- Time 2 (Golden State Warriors) -->
@@ -36,63 +38,13 @@
                     <img src="assets/channels4_profile (1).jpg" alt="Logo Golden State Warriors">
                     <h3>Golden State Warriors</h3>
                     <p>Fundado em 1946. Famoso por sua era de domínio recente e seu estilo de jogo com foco em arremessos de 3 pontos.</p>
-                    <button onclick="exibirDetalhes('warriors')">Ver Detalhes</button>
-                    <div id="warriors" class="detalhes"></div>
+                    <button onclick="toggleDetails('warriors')">Ver Detalhes</button>
+                    <div id="warriors" class="detalhes">
+                        <p>Os Golden State Warriors são conhecidos por sua recente era de dominação na NBA, principalmente com Stephen Curry, Klay Thompson e Draymond Green. Com 7 títulos, eles são um dos times mais inovadores da história da liga.</p>
+                    </div>
                 </div>
 
                 <!-- Time 3 (Los Angeles Lakers) -->
                 <div class="time">
                     <img src="assets/lakers.jpg" alt="Logo Los Angeles Lakers">
                     <h3>Los Angeles Lakers</h3>
-                    <p>Fundado em 1947. Com 17 títulos da NBA, é um dos times mais vitoriosos da história.</p>
-                    <button onclick="exibirDetalhes('lakers')">Ver Detalhes</button>
-                    <div id="lakers" class="detalhes"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção do Pódio -->
-        <section id="podio">
-            <h2>Pódio dos 3 Maiores Times</h2>
-            <div class="podio">
-                <!-- Pódio -->
-                <div class="podio-item">
-                    <h3>1º Lugar: Los Angeles Lakers</h3>
-                    <p>Com 17 títulos da NBA, é considerado um dos maiores times da história.</p>
-                    <p>Principais Jogadores: Magic Johnson, Kobe Bryant, LeBron James</p>
-                    <button class="tablink" onclick="openTab(event, 'lakers-details')">Mais Detalhes</button>
-                    <div id="lakers-details" class="tabcontent">
-                        <p>O Los Angeles Lakers tem 17 títulos e grandes lendas como Magic Johnson, Kobe Bryant e LeBron James. Além disso, é conhecido por seu jogo estiloso e sua torcida apaixonada.</p>
-                    </div>
-                </div>
-
-                <div class="podio-item">
-                    <h3>2º Lugar: Boston Celtics</h3>
-                    <p>17 títulos da NBA e uma grande história no basquete mundial.</p>
-                    <p>Principais Jogadores: Bill Russell, Larry Bird, Paul Pierce</p>
-                    <button class="tablink" onclick="openTab(event, 'celtics-details')">Mais Detalhes</button>
-                    <div id="celtics-details" class="tabcontent">
-                        <p>Com 17 títulos, o Boston Celtics é uma das equipes mais bem-sucedidas, com lendas como Bill Russell e Larry Bird, além de ser um rival histórico dos Lakers.</p>
-                    </div>
-                </div>
-
-                <div class="podio-item">
-                    <h3>3º Lugar: Golden State Warriors</h3>
-                    <p>Com 7 títulos e uma era recente dominando a liga.</p>
-                    <p>Principais Jogadores: Stephen Curry, Klay Thompson, Draymond Green</p>
-                    <button class="tablink" onclick="openTab(event, 'warriors-details')">Mais Detalhes</button>
-                    <div id="warriors-details" class="tabcontent">
-                        <p>Com um estilo de jogo revolucionário, o Golden State Warriors tem 7 títulos, sendo um dos times mais dominantes nos últimos anos, liderado por Stephen Curry e sua linha de 3 pontos.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Times de Basquete | Criado por [victor]</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
