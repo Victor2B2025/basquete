@@ -1,22 +1,19 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Função para mostrar conteúdo das abas
+  const links = document.querySelectorAll("nav ul li a");
+  const sections = document.querySelectorAll("main section");
 
-// Função para alternar os detalhes dos times
-function toggleDetails(team) {
-    const details = document.getElementById(team);
-    details.style.display = details.style.display === "block" ? "none" : "block";
-}
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1); // Pega o id do destino
+      sections.forEach(section => {
+        section.style.display = "none"; // Esconde todas as seções
+      });
+      document.getElementById(targetId).style.display = "block"; // Exibe a seção clicada
+    });
+  });
 
-// Função para abrir as abas interativas de detalhes históricos
-function openTab(evt, tabName) {
-    const tabContents = document.querySelectorAll('.tabcontent');
-    for (let i = 0; i < tabContents.length; i++) {
-        tabContents[i].style.display = "none";
-    }
-
-    const tabLinks = document.querySelectorAll('.tablink');
-    for (let i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
-    }
-
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+  // Torna a primeira seção visível
+  sections[0].style.display = "block";
+});
