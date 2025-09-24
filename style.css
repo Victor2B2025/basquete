@@ -1,9 +1,10 @@
-/* Definindo estilos globais */
+/* Estilos Globais */
 body {
   font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Modo escuro */
+  color: #fff; /* Texto claro */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 
 header {
@@ -24,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s ease;
@@ -40,35 +41,37 @@ main {
 
 /* Estilos para as seções de times */
 .team-section {
-  background-color: #fff;
+  background-color: #1e1e1e; /* Fundo mais escuro para as seções */
   margin-bottom: 2rem;
   padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  animation: fadeIn 1.5s ease-out;
+  transition: all 0.3s ease;
 }
 
 .team-section h2 {
   text-align: center;
   font-size: 2rem;
-  color: #333;
+  color: #ffcc00; /* Título com cor chamativa */
   margin-bottom: 1rem;
 }
 
 .team-section img {
   width: 100%;
   height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
 .team-section img:hover {
-  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+  transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
 }
 
 #regras {
-  background-color: #ffcc00;
+  background-color: #333;
   padding: 2rem;
-  color: #333;
+  color: #fff;
   text-align: center;
   border-radius: 10px;
   margin-top: 2rem;
