@@ -1,151 +1,88 @@
-/* RESET de estilo padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corpo e fonte */
+/* Definindo estilos globais */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #f5f5f5;
-    line-height: 1.6;
-    overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #1d1d1d;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    animation: fadeIn 1s ease-in-out;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul li {
+  display: inline;
+  margin: 0 20px;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #f76c6c;
+nav ul li a:hover {
+  color: #ffcc00; /* Cor de destaque ao passar o mouse */
 }
 
-/* Animação de Fade In */
+main {
+  padding: 2rem;
+}
+
+/* Estilos para as seções de times */
+.team-section {
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.team-section img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.team-section img:hover {
+  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+#regras {
+  background-color: #ffcc00;
+  padding: 2rem;
+  color: #333;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+/* Animação das seções ao rolar a página */
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Container dos Times */
-.times-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    animation: slideUp 1s ease-out;
-}
-
-.time {
-    background-color: #1f1f1f;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
+  0% {
     opacity: 0;
-    animation: slideUp 1s forwards;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.time img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+.team-section {
+  animation: fadeIn 2s ease-out;
 }
-
-button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #f76c6c;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #ff4500;
-}
-
-/* Pódio */
-.podio {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.podio-item {
-    background-color: #1f1f1f;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    width: 30%;
-    text-align: center;
-}
-
-.podio-item h3 {
-    color: #f76c6c;
-}
-
-/* Abas interativas */
-.tabcontent {
-    display: none;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #bbb;
-}
-
-button.tablink {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-top: 15px;
-}
-
-button.tablink:hover {
-    background-color: #45a049;
-}
-
-footer {
-    background-color: #1d1d1d;
-    color: #bbb;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-button:hover, .tablink:hover {
-    background-color: #f76c6c;
-}
-
