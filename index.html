@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Times de Basquete - Tema Escuro</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Basquete</title>
+  <link rel="stylesheet" href="style.css"> <!-- Vincula o arquivo CSS -->
+  <script src="script.js" defer></script> <!-- Vincula o arquivo JS -->
 </head>
 <body>
-    <header>
-        <h1>Os Maiores Times de Basquete</h1>
-        <nav>
-            <ul>
-                <li><a href="#times">Times</a></li>
-                <li><a href="#podio">Pódio</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>O Melhor do Basquete</h1>
+    <nav>
+      <ul>
+        <li><a href="#celtics">Boston Celtics</a></li>
+        <li><a href="#warriors">Golden State Warriors</a></li>
+        <li><a href="#lakers">Los Angeles Lakers</a></li>
+        <li><a href="#regras">Regras</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <!-- Seção dos Times -->
-        <section id="times" class="animated-section">
-            <h2>Times de Basquete</h2>
-            <div class="times-container">
-                <!-- Time 1 (Boston Celtics) -->
-                <div class="time">
-                    <img src="assets/channels4_profile.jpg" alt="Logo Boston Celtics">
-                    <h3>Boston Celtics</h3>
-                    <p>Fundado em 1946. Com 17 títulos da NBA, é um dos maiores rivais dos Lakers.</p>
-                    <button onclick="toggleDetails('celtics')">Ver Detalhes</button>
-                    <div id="celtics" class="detalhes">
-                        <p>O Boston Celtics é um dos times mais tradicionais da NBA, com uma rica história marcada por lendas como Bill Russell e Larry Bird. A equipe tem 17 títulos da NBA, sendo um dos maiores rivais dos Lakers.</p>
-                    </div>
-                </div>
+  <main>
+    <!-- Seção Boston Celtics -->
+    <section id="celtics" class="team-section">
+      <h2>Boston Celtics</h2>
+      <p>A história do time Boston Celtics...</p>
+      <div class="image-slider">
+        <img src="celtics1.jpg" alt="Boston Celtics">
+        <img src="celtics2.jpg" alt="Boston Celtics">
+      </div>
+    </section>
 
-                <!-- Time 2 (Golden State Warriors) -->
-                <div class="time">
-                    <img src="assets/channels4_profile (1).jpg" alt="Logo Golden State Warriors">
-                    <h3>Golden State Warriors</h3>
-                    <p>Fundado em 1946. Famoso por sua era de domínio recente e seu estilo de jogo com foco em arremessos de 3 pontos.</p>
-                    <button onclick="toggleDetails('warriors')">Ver Detalhes</button>
-                    <div id="warriors" class="detalhes">
-                        <p>Os Golden State Warriors são conhecidos por sua recente era de dominação na NBA, principalmente com Stephen Curry, Klay Thompson e Draymond Green. Com 7 títulos, eles são um dos times mais inovadores da história da liga.</p>
-                    </div>
-                </div>
+    <!-- Seção Golden State Warriors -->
+    <section id="warriors" class="team-section">
+      <h2>Golden State Warriors</h2>
+      <p>A história do time Golden State Warriors...</p>
+    </section>
 
-                <!-- Time 3 (Los Angeles Lakers) -->
-                <div class="time">
-                    <img src="assets/lakers.jpg" alt="Logo Los Angeles Lakers">
-                    <h3>Los Angeles Lakers</h3>
+    <!-- Seção Los Angeles Lakers -->
+    <section id="lakers" class="team-section">
+      <h2>Los Angeles Lakers</h2>
+      <p>A história do time Los Angeles Lakers...</p>
+    </section>
+
+    <!-- Seção Regras do Basquete -->
+    <section id="regras">
+      <h2>Regras do Basquete</h2>
+      <p>Aprenda as regras principais do basquete...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Site desenvolvido por [Seu Nome]</p>
+  </footer>
+</body>
+</html>
