@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Função para mostrar conteúdo das abas
   const links = document.querySelectorAll("nav ul li a");
   const sections = document.querySelectorAll("main section");
 
